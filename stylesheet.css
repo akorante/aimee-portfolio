@@ -1,0 +1,233 @@
+
+body{
+  background-image:url("Pics & Vids/Aimee\ Koranteng\ 24.png");
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.6;
+
+  
+}
+.box {
+  display: none;
+
+}
+.maintxt {
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.fade-element {
+  background-color: rgb(248, 255, 254);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.maintxt2 {
+  font-size: 6rem;
+}
+.maintxt3{
+  color:black ;
+
+}
+.fontsize{
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand, .nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+.imgchange{
+  border-width: 0.5px;
+  width: 1px;
+}
+
+
+ .text1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about {
+  background: rgb(0, 0, 0);
+  color: #f4f4f4;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.about {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 4rem;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 220px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  color: white;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+.widthtxtbox{
+  width: 35rem;
+}
+.pad {
+  padding: 1rem ;
+}
+.pad1 {
+  padding: 18rem ;
+  
+}
+.forheader {
+  font-size: 10rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-center {
+  margin-bottom: 3rem;
+}
+
+
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+form input{
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form textarea{
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+form button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+
+footer {
+  background: black;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+.video-container {
+  width: 300px; 
+  border: 1px solid white; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; 
+  text-align: center; 
+  background-color: white; 
+}
+
+
+
+.video-title {
+  font-size: 1.2em; 
+  font-weight: bold; 
+  margin: 10px 0; 
+}
+
+.video-description {
+  font-size: 1em; 
+  color: #555; 
+  padding: 0 15px; 
+}
+
+.gridimg{
+  grid-column: 1/span 4;
+
+}
+
+
+/* CSS Media Queries */
+@media (max-width: 768px) {
+.maintxtf{
+  font-size: 2rem;
+}
+  .maintxt2 {
+      font-size: 1rem;
+  }
+  .maintxt3 {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about img {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    margin-bottom: 1.5rem;
+  }
+}
+
+}

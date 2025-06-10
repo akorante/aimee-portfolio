@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aimee's Video Editing Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body >
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aimee's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 1000px;">
+        
+    <!-- Intro Section -->
+    <header class="maintxt pad1">
+        <div class="container text-white ">
+            <h1 class = maintxt2 >Aimee's Portfolio</h1>
+            <p>Creating stories through a camera lens</p>
+           
+        </div>
+    </header>
+
+  <div class="about pad">
+    <br>
+    <h1>About Me</h1>
+    <br>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4 text-center">
+                <img src="Pics & Vids/Aimee profile pic.jpg" alt="Aimee Profile" class="img-fluid rounded-circle profile-pic">
+            </div>
+            <div class="col-md-7">
+                <p class="about-text">
+                    I'm Aimee, a passionate video editor with experience in creating videos using Final Cut Pro, Adobe Premiere Pro, and After Effects. It all started as a bored but creative arts kid, invested in the style and realness of the "2014" & "2016" YouTube vlogs era. That interest peaked—ironically—during the pandemic. From spending endless nights learning how to make YouTube intros on iMovie to now becoming a video editor who teaches others how to edit too! I enjoy the creative flow of every project I touch. This is a God-given passion, using my creativity to the fullest through a camera or phone lens. I’ll stop yapping now so you can dive into my portfolio :)))
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+    <!-- Services -->
+</div>
+    <div class="pad bg-light">
+        <div class="container">
+            <h2 class="text-center fontsize">Services I provide:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Pics & Vids/film_blog_cinematography.jpg" alt="Project 1" class="img-fluid">
+                    <br>
+                    <h5 class="text-center ">Cinematography</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="Pics & Vids/editing .jpg" alt="Project 2" class="img-fluid">
+                    <br>
+                    <h5 class="text-center ">Splash Logos</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="Pics & Vids/Promotional AD.jpg" alt="Project 3" class="img-fluid">
+                    <br>
+                    <h5 class="text-center ">Promotional Ads</h5>
+                </div>
+            </div>
+        </div>
+
+</div>
+    <footer class="bg-dark text-white text-center">
+        <p>&copy; 2024 Aimee's Portfolio. All Rights Reserved.</p>
+    </footer>
+    <!--I put the jquery and js here because it wasnt working on the js at first so just wanted to try both sides to see! -->
+<script> 
+
+        (function($) {
+            $.fn.scrollFade = function(options) {
+                var settings = $.extend({
+                    fadeInSpeed: 800,   
+                    offset: 0           
+                }, options);
+
+                var $elements = this;
+
+                function checkScrollPosition() {
+                    var windowHeight = $(window).height();
+                    var scrollTop = $(window).scrollTop();
+
+                    $elements.each(function() {
+                        var elementTop = $(this).offset().top;
+
+                       
+                        if (elementTop < (scrollTop + windowHeight - settings.offset)) {
+                            $(this).stop().fadeTo(settings.fadeInSpeed, 1);
+                        }
+                    });
+                }
+
+ 
+                $elements.css('opacity', 0);
+                $(window).on('scroll', checkScrollPosition);
+                checkScrollPosition(); 
+
+                return this;
+            };
+        })(jQuery);
+
+        $(document).ready(function() {
+            $('.fade-element').scrollFade({
+                fadeInSpeed: 1000,  
+                offset: 100         
+            });
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
