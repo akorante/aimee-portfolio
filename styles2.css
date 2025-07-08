@@ -65,7 +65,9 @@ body{
 }
 
 .widthtxtbox{
-  width: 35rem;
+  width: 100%;
+  max-width: 500px; 
+  box-sizing: border-box;
 }
 .pad {
   padding: 1rem ;
