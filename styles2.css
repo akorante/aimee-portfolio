@@ -66,8 +66,12 @@ body{
 
 .widthtxtbox{
   width: 100%;
-  max-width: 500px; 
+  max-width: 100%;
   box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .pad {
   padding: 1rem ;
